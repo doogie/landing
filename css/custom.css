@@ -1,0 +1,40 @@
+.container { width: 1200px!important; }
+
+#fondo1 {    
+	background: url(http://10.208.133.241/landing/img/fondo1.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 880px;
+  overflow: hidden;
+}
+
+#fondo2 {    
+	background: url(http://10.208.133.241/landing/img/fondo2.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1100px;
+  overflow: hidden;
+}
+
+#logo-cabeza { margin-top: 15px; margin-bottom: 70px; }
+
+.tituloBlanco { color: #fff; font-weight: bold; font-size: 60px; margin-bottom: 30px; }
+
+#email, #movil, #comentario { width: 100%; padding: 45px 30px; background-color: rgba(255, 255, 255, 0.7);}
+.form-group { margin-bottom: 25px; }
+
+#maices-desechos{ margin-top: 250px; }
+
+#btnEnviar { background: #b4e434; color: #fff; border-radius: 10px; padding: 15px; font-size: 20px; font-weight: bold; }
+
+
+#fondo2{ padding: 100px 0px; }
+#cont2ItemTitulo { font-size: 40px; font-weight: bold; color: red; }
+.cont2Text { padding-top: 30px; padding-bottom: 100px; }
+#cont2Img { margin-top: -23px; margin-right: 10px; }
+.verEtiqueta { border: 3px solid red; border-radius: 50px; padding: 20px; color: red; font-size: 20px; width: 200px; margin: auto;}
+.txtEtiqueta { margin-top: 30px; color: #01d7fe; font-size: 25px; font-weight: bold;}
