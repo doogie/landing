@@ -1,4 +1,15 @@
+body { font-family: 'Raleway', sans-serif; }
 .container { width: 1200px!important; }
+.nopadding { padding: 0 !important; margin: 0 !important; }
+.fuenteArchivo { font-family: 'Archivo Black', sans-serif; }
+
+.derTOizq { animation-duration: 1s;  animation-name: derTOizq; }
+.zoomIN14 { animation-duration: 1s;  animation-name: zoomIN14; }
+.up { animation-duration: 1s;  animation-name: UP; }
+.abajo { animation-duration: 1s;  animation-name: abajo; }
+.float { animation: float 3s ease-in-out infinite; }
+
+.tit1, .txt1, .tit2, .txt2, .tit3, .txt3, #cont3Titulo, #cont3ItemTxt, #mazorca { display: none; }
 
 #fondo1 {    
 	background: url(http://10.208.133.241/landing/img/fondo1.png) no-repeat center center; 
@@ -11,7 +22,7 @@
 }
 
 #fondo2 {    
-	background: url(http://10.208.133.241/landing/img/fondo2.png) no-repeat center center; 
+	background: url(../img/fondo2.png) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,21 +31,88 @@
   overflow: hidden;
 }
 
-#logo-cabeza { margin-top: 15px; margin-bottom: 70px; }
+#logo-cabeza { margin-top: 15px; margin-bottom: 70px; display: none;}
 
-.tituloBlanco { color: #fff; font-weight: bold; font-size: 60px; margin-bottom: 30px; }
+.tituloBlanco { color: #fff; font-size: 54px; margin-bottom: 30px; }
 
-#email, #movil, #comentario { width: 100%; padding: 45px 30px; background-color: rgba(255, 255, 255, 0.7);}
+#email, #movil, #comentario { width: 100%; padding: 40px 30px; background-color: rgba(255, 255, 255, 0.9);}
 .form-group { margin-bottom: 25px; }
 
 #maices-desechos{ margin-top: 250px; }
 
 #btnEnviar { background: #b4e434; color: #fff; border-radius: 10px; padding: 15px; font-size: 20px; font-weight: bold; }
-
+#btnEnviar:hover { background: #8dc102; }
 
 #fondo2{ padding: 100px 0px; }
-#cont2ItemTitulo { font-size: 40px; font-weight: bold; color: red; }
+#cont2ItemTitulo { font-size: 40px; color: red; }
 .cont2Text { padding-top: 30px; padding-bottom: 100px; }
 #cont2Img { margin-top: -23px; margin-right: 10px; }
 .verEtiqueta { border: 3px solid red; border-radius: 50px; padding: 20px; color: red; font-size: 20px; width: 200px; margin: auto;}
-.txtEtiqueta { margin-top: 30px; color: #01d7fe; font-size: 25px; font-weight: bold;}
+.verEtiqueta:hover { background: red;  color: #fff;}
+
+.txtEtiqueta { margin-top: 30px; color: #01d7fe; font-size: 22px; }
+
+.pideloFijo { position: relative; margin-bottom: -226px; padding-top: 10px; }
+.pideloFix { position: fixed; z-index: 9; top: 10px; width: 100%}
+
+#fondo3 { background: #f4f4f4; }
+#cont3Titulo { font-size: 35px; color: red; margin-bottom: 80px; margin-top: 60px;}
+#puntosGaleria { margin-top: 10px; margin-bottom: 50px;}
+#puntosGaleria .puntos { height: 35px; width: 35px; padding: 0; border: 1px solid #75eaff!important; border-radius: 50%; display: inline-block; text-align: center; background: #75eaff;}
+#cont3List { font-size: 44px; color: #75eaff; }
+#cont3ItemTxt { line-height: 1.2; }
+
+.cont3ItemHover { position: absolute; z-index: 2; top: 0; width: 335px; text-align: center; background-color: rgba(117, 234, 255, 0.9); height: 242px; display: table; margin: 25px; padding: 90px 65px; visibility: hidden; }
+.cont3VerPlato { display: table-cell; vertical-align: middle; border: 3px solid #fff; border-radius: 60px; color: #fff; cursor: pointer;}
+
+#imgCocinero { margin-top: 180px; }
+
+#fondo4{ background: #01d7fe; color: #fff; padding-top: 60px; margin-bottom: -40px;}
+.unproductode { font-size: 18px; margin-bottom: 15px;}
+.cont4Txt { font-size: 27px; margin-bottom: 20px;}
+.icono-instagram { margin: 15px 0px; }
+.cont4Alto{ height: 565px; display: table;}
+.cont4ContImg { display: table-cell; vertical-align: middle; }
+.derechos { position: relative; color: #fff; text-align: center; padding-bottom: 20px;}
+
+img#logoBlanco:hover {filter:opacity(70%);}
+
+.facebook { width: 63px; height: 63px; display:block; background:transparent url('../img/icono-facebook.png') center top no-repeat; }
+.facebook:hover { background-image: url('../img/icono-facebook-hover.png'); }
+.instagram { width: 63px; height: 63px; display:block; background:transparent url('../img/icono-instagram.png') center top no-repeat; }
+.instagram:hover { background-image: url('../img/icono-instagram-hover.png'); }
+.youtube { width: 63px; height: 63px; display:block; background:transparent url('../img/icono-youtube.png') center top no-repeat; }
+.youtube:hover { background-image: url('../img/icono-youtube-hover.png'); }
+
+
+@keyframes derTOizq {
+  from { margin-left: 100%; width: 200%; }
+  to { margin-left: 0%; width: 100%; }
+}
+
+@keyframes zoomIN14 {
+  from { color: #fff; }
+  to { color: #000; }
+}
+
+@keyframes abajo {
+  from { opacity: 0; }
+  to { opacity: 100; }
+}
+
+@keyframes UP {
+  from { margin-top: 340px; }
+  to { margin-top: 0px; }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
