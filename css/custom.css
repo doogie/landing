@@ -1,5 +1,4 @@
 body { font-family: 'Raleway', sans-serif; }
-.container { width: 1200px!important; }
 .nopadding { padding: 0 !important; margin: 0 !important; }
 .fuenteArchivo { font-family: 'Archivo Black', sans-serif; }
 
@@ -58,7 +57,8 @@ body { font-family: 'Raleway', sans-serif; }
 #fondo3 { background: #f4f4f4; }
 #cont3Titulo { font-size: 35px; color: red; margin-bottom: 80px; margin-top: 60px;}
 #puntosGaleria { margin-top: 10px; margin-bottom: 50px;}
-#puntosGaleria .puntos { height: 35px; width: 35px; padding: 0; border: 1px solid #75eaff!important; border-radius: 50%; display: inline-block; text-align: center; background: #75eaff;}
+#puntosGaleria .puntos { height: 35px; width: 35px; padding: 0; border: 1px solid #75eaff!important; border-radius: 50%; display: inline-block; text-align: center;}
+#puntosGaleria .activo { background: #75eaff;}
 #cont3List { font-size: 44px; color: #75eaff; }
 #cont3ItemTxt { line-height: 1.2; }
 
@@ -71,7 +71,7 @@ body { font-family: 'Raleway', sans-serif; }
 .unproductode { font-size: 18px; margin-bottom: 15px;}
 .cont4Txt { font-size: 27px; margin-bottom: 20px;}
 .icono-instagram { margin: 15px 0px; }
-.cont4Alto{ height: 565px; display: table;}
+.cont4Alto{ height: 558px; display: table;}
 .cont4ContImg { display: table-cell; vertical-align: middle; }
 .derechos { position: relative; color: #fff; text-align: center; padding-bottom: 20px;}
 
