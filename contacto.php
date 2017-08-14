@@ -9,9 +9,9 @@ if(empty($_REQUEST[email]) || empty($_REQUEST[movil])){
 
 	$para      = 'it@diezequis.com, directorteleventas@diezequis.com';
 	$titulo    = 'Contacto Landing';
-	$mensaje   = 'Email: '.$_REQUEST[email];
-	$mensaje   .= 'Movil: '.$_REQUEST[movil];
-	$mensaje   .= 'Comentario: '.$_REQUEST[comentario];
+	$mensaje   = 'Email: '.$_REQUEST[email].'\n';
+	$mensaje   .= 'Movil: '.$_REQUEST[movil].'\n';
+	$mensaje   .= 'Comentario: '.$_REQUEST[comentario].'\n';
 
 	$cabeceras = 'From: clientemed@diezequis.com' . "\r\n" .
 	    'Reply-To: clientemed@diezequis.com' . "\r\n" .
