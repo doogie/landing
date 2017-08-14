@@ -40,3 +40,25 @@ $(window).scroll(function() {
     if(scroll >= 2900){ $("#mazorca").addClass("up").show(); }
 
 });
+
+
+$( "#btnEnviar" ).click(function() {
+
+    var email = $("#email").val();
+    var movil = $("#movil").val();
+    var comentario = $("#comentario").val();
+
+    $.confirm({
+        content: function () {
+            var self = this;
+            return $.ajax({ url: 'contacto.php', dataType: 'json', method: 'post', data: { email:email, movil:movil, comentario:comentario } })
+            .done(function (response) {
+                self.setTitle(response[2]);
+                self.setContent(response[1]);
+                self.setType(response[0]);
+            }).fail(function(){
+                self.setContent('Algo salio mal, intentelo nuevamente o por favor envienos un mensaje a clientemed@diezequis.com.');
+            });
+        }
+    });
+});

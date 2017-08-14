@@ -39,14 +39,14 @@ body { font-family: 'Raleway', sans-serif; }
 
 #maices-desechos{ margin-top: 250px; }
 
-#btnEnviar { background: #b4e434; color: #fff; border-radius: 10px; padding: 15px; font-size: 20px; font-weight: bold; }
+#btnEnviar { background: #b4e434; color: #fff; border-radius: 10px; padding: 15px; font-size: 20px; font-weight: bold; cursor: pointer; }
 #btnEnviar:hover { background: #8dc102; }
 
 #fondo2{ padding: 100px 0px; }
 #cont2ItemTitulo { font-size: 40px; color: red; }
 .cont2Text { padding-top: 30px; padding-bottom: 100px; }
 #cont2Img { margin-top: -23px; margin-right: 10px; }
-.verEtiqueta { border: 3px solid red; border-radius: 50px; padding: 20px; color: red; font-size: 20px; width: 200px; margin: auto;}
+.verEtiqueta { border: 3px solid red; border-radius: 50px; padding: 20px; color: red; font-size: 20px; width: 200px; margin: auto; cursor: pointer;}
 .verEtiqueta:hover { background: red;  color: #fff;}
 
 .txtEtiqueta { margin-top: 30px; color: #01d7fe; font-size: 22px; }
