@@ -11,7 +11,7 @@ body { font-family: 'Raleway', sans-serif; }
 .tit1, .txt1, .tit2, .txt2, .tit3, .txt3, #cont3Titulo, #cont3ItemTxt, #mazorca { display: none; }
 
 #fondo1 {    
-	background: url(http://10.208.133.241/landing/img/fondo1.png) no-repeat center center; 
+	background: url(../img/fondo1.png) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -110,3 +110,9 @@ img#logoBlanco:hover {filter:opacity(70%);}
   50% { transform: translatey(-20px); }
   100% { transform: translatey(0px); }
 }
+
+@media (max-width: 600px) {
+  #fondo1 { height: 100%; padding-bottom: 30px;}
+  #pidelo { display: none; }
+  #maices-desechos { margin-top: 0px; }
+  .tituloBlanco { color: #fff; font-size: 30px; }
