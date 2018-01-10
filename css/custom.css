@@ -67,6 +67,7 @@ body { font-family: 'Raleway', sans-serif; }
 
 #imgCocinero { margin-top: 180px; }
 
+#fondo4Movil{ display: none; background: #01d7fe; color: #fff; padding-top: 60px; margin-bottom: -40px;}
 #fondo4{ background: #01d7fe; color: #fff; padding-top: 60px; margin-bottom: -40px;}
 .unproductode { font-size: 18px; margin-bottom: 15px;}
 .cont4Txt { font-size: 27px; margin-bottom: 20px;}
@@ -114,7 +115,8 @@ img#logoBlanco:hover {filter:opacity(70%);}
 @media (max-width: 600px) {
   #fondo1 { height: 100%; padding-bottom: 30px;}
   #fondo2 { height: 100%; padding-bottom: 30px;}
-  #fondo4 { margin-bottom: -50px; }
+  #fondo4 { display: none;}
+  #fondo4movil { display: block; margin-bottom: -50px; }
   .cont4ContImg { text-align: center!important; }
   #pidelo { display: none; }
   #maices-desechos { margin-top: 0px; }
